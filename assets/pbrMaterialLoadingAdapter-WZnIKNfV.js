@@ -1,1 +1,0 @@
-export{t as PBRMaterialLoadingAdapter}from"./pbrMaterialLoadingAdapter-C4f4JNRz.js";

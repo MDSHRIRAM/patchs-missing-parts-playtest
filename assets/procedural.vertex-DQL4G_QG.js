@@ -1,0 +1,1 @@
+export{a as proceduralVertexShader}from"./babylon-DLDz6N1G.js";

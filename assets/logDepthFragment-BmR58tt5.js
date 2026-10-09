@@ -1,0 +1,4 @@
+import{Ai as e}from"./babylon-DLDz6N1G.js";var t=`logDepthFragment`,n=`#ifdef LOGARITHMICDEPTH
+fragmentOutputs.fragDepth=log2(fragmentInputs.vFragmentDepth)*uniforms.logarithmicDepthConstant*0.5;
+#endif
+`;e.IncludesShadersStoreWGSL[t]||(e.IncludesShadersStoreWGSL[t]=n);var r={name:t,shader:n};export{r as t};

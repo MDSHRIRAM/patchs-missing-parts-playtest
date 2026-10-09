@@ -1,0 +1,1 @@
+export{er as defaultPixelShader}from"./babylon-DLDz6N1G.js";
