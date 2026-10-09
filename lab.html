@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<meta name="robots" content="noindex,nofollow">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>Patch - Controls Lab</title>
+    <link rel="icon" href="data:," />
+    <style>:root{--cream:#fff6e6;--plum:#3b2a4a;--teal:#1e7c86;--coral:#d9553f}html,body{background:#c7ccd6;height:100%;margin:0;overflow:hidden}body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;touch-action:none;overscroll-behavior:none;color:var(--plum);font-family:Trebuchet MS,Segoe UI,system-ui,sans-serif}canvas{touch-action:none;outline:none;width:100vw;height:100vh;display:block}.chip{background:#fff6e6e6;border-radius:10px;padding:4px 10px;font-size:13px;font-weight:700;position:fixed}#stats{font:400 11px/1.2 monospace;top:8px;left:8px}#scheme{right:max(8px, env(safe-area-inset-right));top:8px}#profile{right:max(8px, env(safe-area-inset-right));top:38px}#hint{left:50%;bottom:max(10px, env(safe-area-inset-bottom));white-space:nowrap;font-size:12px;font-weight:400;transform:translate(-50%)}body.touch #hint{display:none}#toast{opacity:0;background:var(--cream);pointer-events:none;border-radius:16px;padding:8px 18px;font-size:22px;font-weight:800;transition:opacity .2s;position:fixed;top:20%;left:50%;transform:translate(-50%)}#toast.on{opacity:1}#debugBtn{font:inherit;background:var(--cream);color:var(--plum);border:0;border-radius:8px;padding:3px 8px;font-size:12px;font-weight:700;position:fixed;top:32px;left:8px}#debug{background:#fff6e6f2;border-radius:12px;max-height:calc(100vh - 80px);padding:8px;font-size:12px;display:none;position:fixed;top:60px;left:8px;overflow-y:auto}#debug.on{display:block}#debug label{grid-template-columns:120px 120px 40px;align-items:center;gap:6px;display:grid}#stickZone{width:45%;display:none;position:fixed;top:30%;bottom:0;left:0}#stick{opacity:0;background:#fff6e659;border:3px solid #fff6e6d9;border-radius:50%;width:120px;height:120px;margin:-60px 0 0 -60px;position:fixed}#stick.on{opacity:1}#knob{background:var(--cream);border-radius:50%;width:50px;height:50px;position:absolute;top:35px;left:35px}.round{color:var(--cream);touch-action:none;border-radius:50%;justify-content:center;align-items:center;font-weight:800;display:none;position:fixed;box-shadow:0 4px #0d484fcc}.round.down{transform:translateY(3px);box-shadow:0 1px #0d484fcc}#jumpBtn{right:max(26px, env(safe-area-inset-right));bottom:max(28px, env(safe-area-inset-bottom));background:var(--coral);width:92px;height:92px;font-size:18px}#partsBtn{right:max(130px, calc(env(safe-area-inset-right) + 112px));bottom:max(22px, env(safe-area-inset-bottom));background:var(--teal);width:68px;height:68px;font-size:14px}body.touch #stickZone,body.touch .round{display:flex}#loading{background:#c7ccd6;justify-content:center;align-items:center;font-size:22px;font-weight:800;transition:opacity .3s;display:flex;position:fixed;inset:0}#loading.hidden{opacity:0;pointer-events:none}@media (max-height:500px){.chip{padding:3px 8px;font-size:11px}#profile{top:32px}}</style>
+    <script type="module" crossorigin src="./assets/lab-6fQQ1nA7.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/math.scalar.functions-B_eaYLVj.js">
+    <link rel="modulepreload" crossorigin href="./assets/engineStore-Bn2tApal.js">
+    <link rel="modulepreload" crossorigin href="./assets/internalTexture-B3djGrls.js">
+    <link rel="modulepreload" crossorigin href="./assets/logger-CuBYPcDK.js">
+    <link rel="modulepreload" crossorigin href="./assets/domManagement-BqltO0ki.js">
+    <link rel="modulepreload" crossorigin href="./assets/shaderStore-D-XQlhUT.js">
+    <link rel="modulepreload" crossorigin href="./assets/tools.functions-Bprt2Cxl.js">
+    <link rel="modulepreload" crossorigin href="./assets/performanceConfigurator-UtxC_Odd.js">
+    <link rel="modulepreload" crossorigin href="./assets/abstractEngine.pure-p7_vLYYM.js">
+    <link rel="modulepreload" crossorigin href="./assets/thinEngine.pure-CLNoio7c.js">
+    <link rel="modulepreload" crossorigin href="./assets/typeStore-Cu_sj2zM.js">
+    <link rel="modulepreload" crossorigin href="./assets/guid-BXdVC_j_.js">
+    <link rel="modulepreload" crossorigin href="./assets/halfFloat-Ce77JD5z.js">
+    <link rel="modulepreload" crossorigin href="./assets/tools.pure-BcGihUso.js">
+    <link rel="modulepreload" crossorigin href="./assets/buffer.pure-_7IqC3Fq.js">
+    <link rel="modulepreload" crossorigin href="./assets/math.color.pure-CkfDLwJQ.js">
+    <link rel="modulepreload" crossorigin href="./assets/math.plane-CogRgyvn.js">
+    <link rel="modulepreload" crossorigin href="./assets/decorators-BWcttrMP.js">
+    <link rel="modulepreload" crossorigin href="./assets/decorators.serialization-Bu_AfoPc.js">
+    <link rel="modulepreload" crossorigin href="./assets/smartArray-BRfcgNbX.js">
+    <link rel="modulepreload" crossorigin href="./assets/lightConstants-BeGg_oPo.js">
+    <link rel="modulepreload" crossorigin href="./assets/sceneComponent-CLNSoQ1o.js">
+    <link rel="modulepreload" crossorigin href="./assets/pointerEvents-6fW3B7_m.js">
+    <link rel="modulepreload" crossorigin href="./assets/keyboardEvents-CGYiptFb.js">
+    <link rel="modulepreload" crossorigin href="./assets/scene.pure-DdWVjKZR.js">
+    <link rel="modulepreload" crossorigin href="./assets/node-DKALrQAl.js">
+    <link rel="modulepreload" crossorigin href="./assets/shadowLight-D85jbgGH.js">
+    <link rel="modulepreload" crossorigin href="./assets/math.path-DL9FYEjZ.js">
+    <link rel="modulepreload" crossorigin href="./assets/drawWrapper-Tt6rKaRP.js">
+    <link rel="modulepreload" crossorigin href="./assets/effectRenderer.pure-DJ7F5mi7.js">
+    <link rel="modulepreload" crossorigin href="./assets/sphericalPolynomial.pure-C2OmbMy_.js">
+    <link rel="modulepreload" crossorigin href="./assets/math.size-BHZaDYSv.js">
+    <link rel="modulepreload" crossorigin href="./assets/baseTexture.pure-Bmxhk4Gy.js">
+    <link rel="modulepreload" crossorigin href="./assets/texture.pure-KUT9PX1Z.js">
+    <link rel="modulepreload" crossorigin href="./assets/renderTargetTexture.pure-Bucz7PRQ.js">
+    <link rel="modulepreload" crossorigin href="./assets/postProcess.pure-crzmTT_S.js">
+    <link rel="modulepreload" crossorigin href="./assets/material.pure-6VnL7iCe.js">
+    <link rel="modulepreload" crossorigin href="./assets/imageProcessing-CaeuXehH.js">
+    <link rel="modulepreload" crossorigin href="./assets/material.detailMapConfiguration-B123DZPC.js">
+    <link rel="modulepreload" crossorigin href="./assets/freeCamera.pure-BWaWjf5l.js">
+    <link rel="modulepreload" crossorigin href="./assets/math.color-oTUKdF23.js">
+    <link rel="modulepreload" crossorigin href="./assets/freeCamera-DpsTz_hU.js">
+    <link rel="modulepreload" crossorigin href="./assets/animation.pure-ahs4eOvN.js">
+    <link rel="modulepreload" crossorigin href="./assets/bone.pure-DsImI5RZ.js">
+    <link rel="modulepreload" crossorigin href="./assets/constants-_wyaM_ID.js">
+    <link rel="modulepreload" crossorigin href="./assets/flowGraphInteger.pure-CZmJgkLp.js">
+    <link rel="modulepreload" crossorigin href="./assets/glTFLoaderAnimation.pure-iiLpqFjV.js">
+    <link rel="modulepreload" crossorigin href="./assets/environmentTextureTools.pure-DQ13_vBT.js">
+    <link rel="modulepreload" crossorigin href="./assets/workerPool-Dva09jEo.js">
+    <link rel="modulepreload" crossorigin href="./assets/multiRenderTarget.pure-hYr-Thwm.js">
+    <link rel="modulepreload" crossorigin href="./assets/flowGraphBlock-DO1kE-XE.js">
+    <link rel="modulepreload" crossorigin href="./assets/flowGraphAssetsContext-WtUyuDAI.js">
+    <link rel="modulepreload" crossorigin href="./assets/flowGraphExecutionBlock-CS-i0XJS.js">
+    <link rel="modulepreload" crossorigin href="./assets/flowGraphExecutionBlockWithOutSignal-juUKehRG.js">
+    <link rel="modulepreload" crossorigin href="./assets/flowGraphAsyncExecutionBlock-DzOvFREU.js">
+    <link rel="modulepreload" crossorigin href="./assets/utils-CLq_UU0_.js">
+    <link rel="modulepreload" crossorigin href="./assets/flowGraphEventBlock-DJdlz53V.js">
+    <link rel="modulepreload" crossorigin href="./assets/flowGraphCoordinator-Dl6JbQ4-.js">
+    <link rel="modulepreload" crossorigin href="./assets/flowGraphRichTypes.pure-C8u7_czL.js">
+    <link rel="modulepreload" crossorigin href="./assets/flowGraphRichTypes-DFzyWA6s.js">
+    <link rel="modulepreload" crossorigin href="./assets/flowGraphDelayRegistry-Dd3murvx.js">
+    <link rel="modulepreload" crossorigin href="./assets/partKit-BjyTTnjM.js">
+  </head>
+  <body>
+    <canvas id="lab"></canvas>
+    <div id="stats" class="chip"></div>
+    <button id="debugBtn">Tune</button>
+    <div id="debug"></div>
+    <div id="scheme" class="chip"></div>
+    <div id="profile" class="chip"></div>
+    <div id="hint" class="chip">WASD or arrows: move · Shift: walk · Space: jump (hold = higher) · E: use · Z / X: turn camera · 1 / 2: scheme · P: legs · Drag: look (optional)</div>
+    <div id="toast"></div>
+    <div id="stickZone"><div id="stick"><div id="knob"></div></div></div>
+    <div id="jumpBtn" class="round">Jump</div>
+    <div id="partsBtn" class="round">Parts</div>
+    <div id="loading">Loading the Controls Lab...</div>
+    <script>
+      window.addEventListener('wheel', (e) => e.preventDefault(), { passive: false });
+      document.addEventListener('contextmenu', (e) => e.preventDefault());
+    </script>
+  </body>
+</html>

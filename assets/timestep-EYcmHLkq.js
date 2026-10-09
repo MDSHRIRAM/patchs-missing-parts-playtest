@@ -1,0 +1,1 @@
+function e(e,t){if(!(e>0))return{steps:1,h:0};let n=Math.max(1,Math.ceil(e/t-1e-6));return{steps:n,h:e/n}}var t=(e,t)=>Math.min(Math.max(e,0)/1e3,t);export{e as n,t};
