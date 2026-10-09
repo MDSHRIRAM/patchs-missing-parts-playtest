@@ -1,0 +1,1 @@
+export{b as colorVertexShader}from"./babylon-CbhTc366.js";

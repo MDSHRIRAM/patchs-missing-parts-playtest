@@ -1,0 +1,1 @@
+export{x as colorPixelShader}from"./babylon-CbhTc366.js";

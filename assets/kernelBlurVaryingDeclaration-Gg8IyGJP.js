@@ -1,0 +1,1 @@
+import{ji as e}from"./babylon-CbhTc366.js";var t=`kernelBlurVaryingDeclaration`,n=`varying sampleCoord{X}: vec2f;`;e.IncludesShadersStoreWGSL[t]||(e.IncludesShadersStoreWGSL[t]=n);var r={name:t,shader:n};export{r as t};

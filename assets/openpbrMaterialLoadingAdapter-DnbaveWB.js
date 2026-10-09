@@ -1,1 +1,0 @@
-export{fn as OpenPBRMaterialLoadingAdapter}from"./babylon-DLDz6N1G.js";

@@ -1,0 +1,1 @@
+export{wn as PBRMaterialLoadingAdapter}from"./babylon-CbhTc366.js";

@@ -1,0 +1,1 @@
+export{$n as outlineVertexShader}from"./babylon-CbhTc366.js";

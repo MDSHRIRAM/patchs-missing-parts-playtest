@@ -1,1 +1,0 @@
-export{tr as defaultVertexShader}from"./babylon-DLDz6N1G.js";

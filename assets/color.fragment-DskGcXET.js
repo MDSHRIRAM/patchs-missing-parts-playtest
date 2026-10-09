@@ -1,1 +1,0 @@
-export{x as colorPixelShader}from"./babylon-DLDz6N1G.js";

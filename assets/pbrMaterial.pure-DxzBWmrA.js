@@ -1,0 +1,1 @@
+export{Gn as PBRMaterial,Kn as RegisterPBRMaterial,qn as RegisterPbrMaterial}from"./babylon-CbhTc366.js";

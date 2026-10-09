@@ -1,0 +1,1 @@
+export{c as passPixelShader}from"./babylon-CbhTc366.js";

@@ -1,0 +1,1 @@
+export{v as gaussianSplattingPixelShader}from"./babylon-CbhTc366.js";

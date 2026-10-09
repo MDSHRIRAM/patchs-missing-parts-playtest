@@ -1,0 +1,1 @@
+export{tr as defaultVertexShader}from"./babylon-CbhTc366.js";

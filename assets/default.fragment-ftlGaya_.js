@@ -1,0 +1,1 @@
+export{er as defaultPixelShader}from"./babylon-CbhTc366.js";
